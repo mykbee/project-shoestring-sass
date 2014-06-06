@@ -323,7 +323,7 @@ body {
     color: black;
     margin: 0 auto; }
   /* line 16, ../../../sass/shoestring/garagemain.sass */
-  body #top-right {
+  body .header-address {
     text-align: right;
     padding-top: 17px; }
 
@@ -344,24 +344,32 @@ body {
     padding-top: 23px;
     display: inline-block; }
 
-/* line 32, ../../../sass/shoestring/garagemain.sass */
+@media (min-width: 400px) and (max-width: 625px) {
+  /* line 33, ../../../sass/shoestring/garagemain.sass */
+  .header-address {
+    text-align: center; }
+
+  /* line 35, ../../../sass/shoestring/garagemain.sass */
+  .main-logo {
+    text-align: center; } }
+/* line 38, ../../../sass/shoestring/garagemain.sass */
 #skyline {
   max-height: 350px; }
-  /* line 35, ../../../sass/shoestring/garagemain.sass */
+  /* line 41, ../../../sass/shoestring/garagemain.sass */
   #skyline img {
     width: 100%;
     height: 100%; }
 
-/* line 40, ../../../sass/shoestring/garagemain.sass */
+/* line 46, ../../../sass/shoestring/garagemain.sass */
 #info div {
   text-align: center;
   font-size: 1.5rem; }
-  /* line 43, ../../../sass/shoestring/garagemain.sass */
+  /* line 49, ../../../sass/shoestring/garagemain.sass */
   #info div p {
     text-align: center;
     font-size: 1rem; }
 
-/* line 47, ../../../sass/shoestring/garagemain.sass */
+/* line 53, ../../../sass/shoestring/garagemain.sass */
 #footer {
   background-color: black;
   color: white;
