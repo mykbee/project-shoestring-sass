@@ -1,0 +1,54 @@
+@import vars
+@import mixins
+
+html
+  font-size: 100%
+
+@media (min-width: 40rem)
+  html 
+    font-size: 112%
+@media (min-width: 64rem)
+  html
+    font-size: 120%
+
+*, *:before, *:after
+  +box-sizing
+
+.container
+  margin: 0 auto
+  //max-width: 48em
+  width: 90%
+  &.demo
+    margin-bottom: 10px // for DEMO purposes
+
+.full-width-container
+  margin: 0 auto
+  width: 100%
+
+@media (min-width: 40rem)
+  .column
+    float: left
+    margin-right: 1rem
+    padding-right: 1rem
+    &.full 
+      width: 100% 
+    &.two-thirds 
+      width: 63.7%
+    &.half 
+      width: 47.5%
+    &.third   
+      width: 32% 
+      margin-right: 2%
+    &.fourth 
+      width: 23.5%
+    &.fourth-padded
+      width: 23.5%
+      margin-right: 2%
+    &.three-fourths
+      width: 72.9%
+    &.flow-opposite 
+      float: right
+      padding-right: 0
+      margin-right: 0
+    img, iframe
+      width: 100%

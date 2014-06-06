@@ -1,9 +1,23 @@
 @import links
 @import normalize
+@import clearfix
+@import vars
+@import mixins 
 
 body
-  background: orange
+  background: white 
   h1
-    color: black
-    margin: 0 0 0 0 
+    color: $sassy-pink
+    margin: 0 auto
+
+.border-tester
+  +border-radius(5px)
+  background: lighten(blue, 10%)
+  width: 200px
+  height: 100 px
+
+@import grid
+
+// add button styles
+@import buttons
 

@@ -1,0 +1,53 @@
+@import links
+@import normalize
+@import clearfix
+@import vars
+@import mixins 
+@import grid
+// @import buttons
+
+
+body
+  background: white 
+  h1
+    font-size: 1.3rem 
+    color: black
+    margin: 0 auto
+  #top-right
+    text-align: right
+    padding-top: 17px
+
+.border-tester
+  +border-radius(5px)
+  background: lighten(blue, 10%)
+  width: 200px
+  height: 100 px
+
+#header
+  padding-top: 10px
+  span 
+    padding-top: 23px
+    display: inline-block
+
+#skyline
+  max-height: 350px
+  //overflow: auto
+  img 
+    width: 100%
+    height: 100%
+
+#info
+  div
+    text-align: center
+    font-size: 1.5rem
+    p 
+      text-align: center
+      font-size: 1rem
+
+#footer
+  background-color: black
+  color: white 
+  text-align: center 
+  height: 50px
+  padding-top: 1px 
+  font-size: .8rem
